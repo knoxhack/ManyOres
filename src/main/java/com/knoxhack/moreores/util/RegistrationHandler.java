@@ -1,4 +1,4 @@
-package com.knoxhack.moreores.setup;
+package com.knoxhack.moreores.util;
 
 import com.knoxhack.moreores.blocks.EnderOre;
 import com.knoxhack.moreores.MoreOres;
@@ -19,6 +19,7 @@ public class RegistrationHandler {
 	public static void init() {
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+		
 
 	}
 	
