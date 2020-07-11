@@ -3,10 +3,12 @@ package com.knoxhack.moreores;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.config.ModConfig;
 
@@ -15,6 +17,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.knoxhack.moreores.util.Config;
 import com.knoxhack.moreores.util.RegistrationHandler;
+import com.knoxhack.moreores.world.MoreOresOreGen;
 
 @Mod("moreores")
 public class MoreOres
@@ -26,13 +29,15 @@ public class MoreOres
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
         RegistrationHandler.init();
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_SPEC);
+        RegistrationHandler.loadConfig();
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event)
     {
         LOGGER.info("HELLO FROM PREINIT");
+        RegistrationHandler.oreGen();
+
     }
 
 	private void doClientStuff(final FMLClientSetupEvent event) {
@@ -43,7 +48,7 @@ public class MoreOres
 		
 		@Override
 		public ItemStack createIcon() {
-			return new ItemStack(RegistrationHandler.ENDERORE.get());
+			return new ItemStack(RegistrationHandler.ENDER_ORE.get());
 		}
 	};
 	

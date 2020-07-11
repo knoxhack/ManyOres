@@ -1,6 +1,22 @@
 {
-    "item.moreores.example_item": "Example Item",
     "itemGroup.moreores": "More Ores",
-    "block.moreores.ender_ore": "Ender Ore"
+    "block.moreores.ender_ore": "Ender Ore",
+    "block.moreores.flint_ore": "Flint Ore",
+    "block.moreores.glowstone_ore": "Glowstone Ore",
+    "block.moreores.gunpowder_ore": "Gunpowder Ore",
+    "block.moreores.beef_ore": "Beef Ore",
+    "block.moreores.blaze_ore": "Blaze Ore",
+    "block.moreores.bone_ore": "Bone Ore",
+    "block.moreores.carrot_ore": "Carrot Ore",
+    "block.moreores.chicken_ore": "Chicken Ore",
+    "block.moreores.feather_ore": "Feather Ore",
+    "block.moreores.fish_ore": "Fish Ore",
+    "block.moreores.magma_ore": "Magma Ore",
+    "block.moreores.melon_ore": "Ender Ore",
+    "block.moreores.porckchop_ore": "Ender Ore",
+    "block.moreores.potato_ore": "Ender Ore",
+    "block.moreores.prismarine_ore": "Ender Ore",
+    "block.moreores.rotten_ore": "Ender Ore",
+    "block.moreores.slime_ore": "Ender Ore"
 
 }
