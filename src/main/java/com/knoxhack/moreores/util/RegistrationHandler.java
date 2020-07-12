@@ -38,16 +38,64 @@ public class RegistrationHandler {
 	public static void init() {
 		BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
 		ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-		
 
 	}
 	
 	public static void oreGen() {
+		if (Config.ORES.EnabledEnderOre.get().booleanValue() == true) {
         MoreOresOreGen.generateEnderOre();
+		    }
+		if (Config.ORES.EnabledFlintOre.get().booleanValue() == true) {
         MoreOresOreGen.generateFlintOre();
+		    }
+		if (Config.ORES.EnabledGlowstoneOre.get().booleanValue() == true) {
         MoreOresOreGen.generateGlowstoneOre();
+		    }
+		if (Config.ORES.EnabledGunpowderOre.get().booleanValue() == true) {
         MoreOresOreGen.generateGunpowderOre();
-
+		    }
+		if (Config.ORES.EnabledBeefOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateBeefOre();
+			}
+		if (Config.ORES.EnabledBlazeOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateBlazeOre();
+			}
+		if (Config.ORES.EnabledBoneOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateBoneOre();
+			}
+		if (Config.ORES.EnabledCarrotOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateCarrotOre();
+			}
+		if (Config.ORES.EnabledChickenOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateChickenOre();
+			}
+		if (Config.ORES.EnabledFeatherOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateFeatherOre();
+			}
+		if (Config.ORES.EnabledFishOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateFishOre();
+			}
+		if (Config.ORES.EnabledMagmaOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateMagmaOre();
+			}
+		if (Config.ORES.EnabledMelonOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateMelonOre();
+			}
+		if (Config.ORES.EnabledPorckchopOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generatePorckchopOre();
+			}
+		if (Config.ORES.EnabledPotatoOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generatePotatoOre();
+			}
+		if (Config.ORES.EnabledPrismarineOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generatePrismarineOre();
+			}
+		if (Config.ORES.EnabledRottenOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateRottenOre();
+			}
+		if (Config.ORES.EnabledSlimeOre.get().booleanValue() == true) {
+	        MoreOresOreGen.generateSlimeOre();
+			}
 	}
 	
 	public static void loadConfig() {
@@ -73,70 +121,63 @@ public class RegistrationHandler {
     
 	public static final RegistryObject<BeefOre> BEEF_ORE = BLOCKS.register ("beef_ore", BeefOre::new);
     public static final RegistryObject<Item> BEEF_ORE_ITEM = ITEMS.register("beef_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(BEEF_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<BlazeOre> BLAZE_ORE = BLOCKS.register ("blaze_ore", BlazeOre::new);
     public static final RegistryObject<Item> BLAZE_ORE_ITEM = ITEMS.register("blaze_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(BLAZE_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<BoneOre> BONE_ORE = BLOCKS.register ("bone_ore", BoneOre::new);
     public static final RegistryObject<Item> BONE_ORE_ITEM = ITEMS.register("bone_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(BONE_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<CarrotOre> CARROT_ORE = BLOCKS.register ("carrot_ore", CarrotOre::new);
-    public static final RegistryObject<Item> CARROT_ORE_ITEM = ITEMS.register("caroot_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    public static final RegistryObject<Item> CARROT_ORE_ITEM = ITEMS.register("carrot_ore", ()
+    		-> new BlockItem(CARROT_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
     
 	public static final RegistryObject<ChickenOre> CHICKEN_ORE = BLOCKS.register ("chicken_ore", ChickenOre::new);
     public static final RegistryObject<Item> CHICKEN_ORE_ITEM = ITEMS.register("chicken_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(CHICKEN_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<FeatherOre> FEATHER_ORE = BLOCKS.register ("feather_ore", FeatherOre::new);
     public static final RegistryObject<Item> FEATHER_ORE_ITEM = ITEMS.register("feather_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(FEATHER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<FishOre> FISH_ORE = BLOCKS.register ("fish_ore", FishOre::new);
     public static final RegistryObject<Item> FISH_ORE_ITEM = ITEMS.register("fish_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(FISH_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<MagmaOre> MAGMA_ORE = BLOCKS.register ("magma_ore", MagmaOre::new);
     public static final RegistryObject<Item> MAGMA_ORE_ITEM = ITEMS.register("magma_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(MAGMA_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
     
 	public static final RegistryObject<MelonOre> MELON_ORE = BLOCKS.register ("melon_ore", MelonOre::new);
     public static final RegistryObject<Item> MELON_ORE_ITEM = ITEMS.register("melon_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(MELON_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<PorckchopOre> PORKCHOP_ORE = BLOCKS.register ("porkchop_ore", PorckchopOre::new);
-    public static final RegistryObject<Item> PORKCHOP_ORE_ITEM = ITEMS.register("porckchop_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    public static final RegistryObject<Item> PORKCHOP_ORE_ITEM = ITEMS.register("porkchop_ore", ()
+    		-> new BlockItem(PORKCHOP_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<PotatoOre> POTATO_ORE = BLOCKS.register ("potato_ore", PotatoOre::new);
     public static final RegistryObject<Item> POTATO_ORE_ITEM = ITEMS.register("potato_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(POTATO_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<PrismarineOre> PRISMARINE_ORE = BLOCKS.register ("prismarine_ore", PrismarineOre::new);
     public static final RegistryObject<Item> PRISMARINE_ORE_ITEM = ITEMS.register("prismarine_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(PRISMARINE_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
     
 	public static final RegistryObject<RottenOre> ROTTEN_ORE = BLOCKS.register ("rotten_ore", RottenOre::new);
     public static final RegistryObject<Item> ROTTEN_ORE_ITEM = ITEMS.register("rotten_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+    		-> new BlockItem(ROTTEN_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
     
 	public static final RegistryObject<SlimeOre> SLIME_ORE = BLOCKS.register ("slime_ore", SlimeOre::new);
     public static final RegistryObject<Item> SLIME_ORE_ITEM = ITEMS.register("slime_ore", ()
-    		-> new BlockItem(ENDER_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
-    
-    
-    
-    
-    
-    
-    
-    
+    		-> new BlockItem(SLIME_ORE.get(), new Item.Properties().group(MoreOres.TAB)));
+
     //public static final RegistryObject<Item> TEMP_ITEM = ITEMS.register("tempitem", TestItem::new);
 
 	

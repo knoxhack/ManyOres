@@ -12,11 +12,11 @@
     "block.moreores.feather_ore": "Feather Ore",
     "block.moreores.fish_ore": "Fish Ore",
     "block.moreores.magma_ore": "Magma Ore",
-    "block.moreores.melon_ore": "Ender Ore",
-    "block.moreores.porckchop_ore": "Ender Ore",
-    "block.moreores.potato_ore": "Ender Ore",
-    "block.moreores.prismarine_ore": "Ender Ore",
-    "block.moreores.rotten_ore": "Ender Ore",
-    "block.moreores.slime_ore": "Ender Ore"
+    "block.moreores.melon_ore": "Melon Ore",
+    "block.moreores.porckchop_ore": "Porckchop Ore",
+    "block.moreores.potato_ore": "Potato Ore",
+    "block.moreores.prismarine_ore": "Prismarine Ore",
+    "block.moreores.rotten_ore": "Rotten Ore",
+    "block.moreores.slime_ore": "Slime Ore"
 
 }
