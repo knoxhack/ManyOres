@@ -1,1 +1,1 @@
-# MoreOres
+# ManyOres
