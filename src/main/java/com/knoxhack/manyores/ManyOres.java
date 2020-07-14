@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.knoxhack.manyores.util.RegistrationHandler;
 
-@Mod("moreores")
+@Mod("manyores")
 public class ManyOres
 {
     private static final Logger LOGGER = LogManager.getLogger();

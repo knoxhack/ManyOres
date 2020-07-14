@@ -9,9 +9,7 @@ public class GlowstoneOre extends Block {
 	public GlowstoneOre() {
 		super(Properties.create(Material.IRON)
 		.sound(SoundType.METAL)
-		.hardnessAndResistance(2.0f)
-		.lightValue(14)
-		
+		.hardnessAndResistance(2.0f)		
 		);
 	}
 
