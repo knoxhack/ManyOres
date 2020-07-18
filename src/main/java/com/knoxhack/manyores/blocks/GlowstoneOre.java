@@ -1,10 +1,13 @@
 package com.knoxhack.manyores.blocks;
 
-import net.minecraft.block.Block;
+import java.util.Random;
+
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.util.math.MathHelper;
 
-public class GlowstoneOre extends Block {
+public class GlowstoneOre extends OreBlock {
 
 	public GlowstoneOre() {
 		super(Properties.create(Material.IRON)
@@ -12,5 +15,9 @@ public class GlowstoneOre extends Block {
 		.hardnessAndResistance(2.0f)		
 		);
 	}
+	public int getExperience(Random rand) {
+		return MathHelper.nextInt(rand, 3, 7);
+
+	 }
 
 }
