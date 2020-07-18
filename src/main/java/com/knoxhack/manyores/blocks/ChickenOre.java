@@ -1,10 +1,13 @@
 package com.knoxhack.manyores.blocks;
 
-import net.minecraft.block.Block;
+import java.util.Random;
+
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.util.math.MathHelper;
 
-public class ChickenOre extends Block {
+public class ChickenOre extends OreBlock {
 
 	public ChickenOre() {
 		super(Properties.create(Material.IRON)
@@ -13,5 +16,10 @@ public class ChickenOre extends Block {
 		
 		);
 	}
+	
+	public int getExperience(Random rand) {
+		return MathHelper.nextInt(rand, 0, 2);
+
+	 }
 
 }

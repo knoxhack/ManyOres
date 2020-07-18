@@ -1,10 +1,13 @@
 package com.knoxhack.manyores.blocks;
 
-import net.minecraft.block.Block;
+import java.util.Random;
+
+import net.minecraft.block.OreBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.util.math.MathHelper;
 
-public class PrismarineOre extends Block {
+public class PrismarineOre extends OreBlock {
 
 	public PrismarineOre() {
 		super(Properties.create(Material.IRON)
@@ -13,5 +16,10 @@ public class PrismarineOre extends Block {
 		
 		);
 	}
+	
+	public int getExperience(Random rand) {
+		return MathHelper.nextInt(rand, 3, 7);
+
+	 }
 
 }
