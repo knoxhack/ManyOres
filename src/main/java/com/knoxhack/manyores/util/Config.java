@@ -189,7 +189,7 @@ public class Config {
 	            EnderOreCount = builder
 	                    .comment("Changes how common the Ender Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config")
-	                    .defineInRange("EnderOreCount", 7, 0, 100); 
+	                    .defineInRange("EnderOreCount", 3, 0, 100); 
 	            
 	            EnderOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Ender Ore can spawn")
@@ -204,7 +204,7 @@ public class Config {
 	            EnderOreMaximum = builder
 	                    .comment("Changes the highest Y level that the Ender Ore can spawn")
 	                    .translation(ManyOres.MODID + ".config")
-	                    .defineInRange("EnderOreMaximum", 75, 0, 200); 
+	                    .defineInRange("EnderOreMaximum", 15, 0, 200); 
 	            builder.pop();
 
 	            builder.push("Flint Ore");
@@ -268,7 +268,7 @@ public class Config {
 	            GlowstoneOreMaximum = builder
 	                    .comment("Changes the highest Y level that the Glowstone Ore can spawn")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("GlowstoneOreMaximum", 45, 0, 200); 
+	                    .defineInRange("GlowstoneOreMaximum", 10, 0, 200); 
 	            builder.pop();
 
 	            builder.push("Gunpowder ore");
@@ -285,7 +285,7 @@ public class Config {
 	            GunpowderOreCount = builder
 	                    .comment("Changes how common the Gunpowder Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("GunpowderOreCount", 7, 0, 100);     
+	                    .defineInRange("GunpowderOreCount", 3, 0, 100);     
 	            
 	            GunpowderOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Gunpowder Ore can spawn")
@@ -300,7 +300,7 @@ public class Config {
 	            GunpowderOreMaximum = builder
 	                    .comment("Changes the highest Y level that the Gunpowder Ore can spawn")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("GunpowderOreMaximum", 45, 0, 200); 
+	                    .defineInRange("GunpowderOreMaximum", 15, 0, 200); 
 	            
 	            builder.pop();
 	            
@@ -350,7 +350,7 @@ public class Config {
 	            BlazeOreCount = builder
 	                    .comment("Changes how common the Blaze Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("BlazeOreCount", 7, 0, 100);     
+	                    .defineInRange("BlazeOreCount", 3, 0, 100);     
 	            
 	            BlazeOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Blaze Ore can spawn")
@@ -365,7 +365,7 @@ public class Config {
 	            BlazeOreMaximum = builder
 	                    .comment("Changes the highest Y level that the Blaze Ore can spawn")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("BlazeOreMaximum", 25, 0, 200); 
+	                    .defineInRange("BlazeOreMaximum", 10, 0, 200); 
 	            builder.pop();
 	            
 	            builder.push("Bone Ore");
@@ -468,7 +468,7 @@ public class Config {
 	            EnabledFeatherOre = builder
 	                    .comment("Enables/Disables the Feather Ore block from generating in the world [false/true|default:true]")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .define("EnabledFeatherOre", true);
+	                    .define("EnabledFeatherOre", false);
 	            
 	            FeatherOreVeinSize = builder
 	                    .comment("Changes the amount of Feather Ore on each vein")
@@ -478,7 +478,7 @@ public class Config {
 	            FeatherOreCount = builder
 	                    .comment("Changes how common the Feather Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("FeatherOreCount", 8, 0, 100);     
+	                    .defineInRange("FeatherOreCount", 10, 0, 100);     
 	            
 	            FeatherOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Feather Ore can spawn")
@@ -542,7 +542,7 @@ public class Config {
 	            MagmaOreCount = builder
 	                    .comment("Changes how common the Magma Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("MagmaOreCount", 7, 0, 100);     
+	                    .defineInRange("MagmaOreCount", 3, 0, 100);     
 	            
 	            MagmaOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Magma Ore can spawn")
@@ -557,7 +557,7 @@ public class Config {
 	            MagmaOreMaximum = builder
 	                    .comment("Changes the highest Y level that the Magma Ore can spawn")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("MagmaOreMaximum", 25, 0, 200); 
+	                    .defineInRange("MagmaOreMaximum", 10, 0, 200); 
 	            builder.pop();
 	            
 	            builder.push("Melon Ore");
@@ -670,7 +670,7 @@ public class Config {
 	            PrismarineOreCount = builder
 	                    .comment("Changes how common the Prismarine Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("PrismarineOreCount", 7, 0, 100);     
+	                    .defineInRange("PrismarineOreCount", 3, 0, 100);     
 	            
 	            PrismarineOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Prismarine Ore can spawn")
@@ -685,7 +685,7 @@ public class Config {
 	            PrismarineOreMaximum = builder
 	                    .comment("Changes the highest Y level that the Prismarine Ore can spawn")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("PrismarineOreMaximum", 75, 0, 200); 
+	                    .defineInRange("PrismarineOreMaximum", 15, 0, 200); 
 	            builder.pop();
 	            
 	            builder.push("Rotten Ore");
@@ -734,7 +734,7 @@ public class Config {
 	            SlimeOreCount = builder
 	                    .comment("Changes how common the Slime Ore block will generate in the world")
 	                    .translation(ManyOres.MODID + ".config.")
-	                    .defineInRange("SlimeOreCount", 7, 0, 100);     
+	                    .defineInRange("SlimeOreCount", 3, 0, 100);     
 	            
 	            SlimeOreBottonOffSet = builder
 	                    .comment("Changes the lowest Y level that the Slime Ore can spawn")

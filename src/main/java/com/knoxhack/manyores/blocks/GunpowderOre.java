@@ -1,13 +1,10 @@
 package com.knoxhack.manyores.blocks;
 
-import java.util.Random;
-
-import net.minecraft.block.OreBlock;
+import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.util.math.MathHelper;
 
-public class GunpowderOre extends OreBlock {
+public class GunpowderOre extends Block {
 
 	public GunpowderOre() {
 		super(Properties.create(Material.IRON)
@@ -16,10 +13,5 @@ public class GunpowderOre extends OreBlock {
 		
 		);
 	}
-	
-	public int getExperience(Random rand) {
-		return MathHelper.nextInt(rand, 3, 7);
-
-	 }
 
 }
